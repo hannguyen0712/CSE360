@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EffortLogEditorController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="14.0" prefHeight="17.0" prefWidth="274.0" text="Effort Log Editor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="36.0" prefHeight="17.0" prefWidth="266.0" text="Select the Project in order to edit its Effort Log." />
+      <ChoiceBox layoutX="33.0" layoutY="53.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label layoutX="474.0" layoutY="36.0" prefHeight="17.0" prefWidth="266.0" text="Clear this Project's Effort Log." />
+      <Button layoutX="474.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="171.0" text="Clear This Effort Log" />
+      <Label layoutX="33.0" layoutY="93.0" prefHeight="17.0" prefWidth="464.0" text="Select the Effort Log Entry to be modified and make it the Current Effort Log Entry" />
+      <ChoiceBox layoutX="33.0" layoutY="110.0" prefHeight="25.0" prefWidth="464.0" />
+      <Label layoutX="33.0" layoutY="142.0" prefHeight="17.0" prefWidth="519.0" text="Modify the Current Effort Log Entry's atttributes and press &quot;Update This Entry&quot; when finished." />
+      <Label layoutX="33.0" layoutY="165.0" prefHeight="17.0" prefWidth="36.0" text="Date:" />
+      <TextField layoutX="69.0" layoutY="161.0" />
+      <Label layoutX="247.0" layoutY="165.0" prefHeight="17.0" prefWidth="63.0" text="Start Time:" />
+      <TextField layoutX="312.0" layoutY="161.0" />
+      <Label layoutX="497.0" layoutY="165.0" prefHeight="17.0" prefWidth="63.0" text="Start Time:" />
+      <TextField layoutX="571.0" layoutY="161.0" />
+      <Label layoutX="33.0" layoutY="206.0" prefHeight="17.0" prefWidth="92.0" text="Life Cycle Step:" />
+      <ChoiceBox layoutX="33.0" layoutY="223.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="255.0" prefHeight="17.0" prefWidth="92.0" text="Effort Category:" />
+      <ChoiceBox layoutX="33.0" layoutY="272.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="204.0" layoutY="272.0" prefHeight="25.0" prefWidth="376.0" />
+      <Button layoutX="207.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" text="Update This Entry" />
+      <Button layoutX="25.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Delete This Entry" />
+      <Button layoutX="25.0" layoutY="445.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" text="Split This Entry into Two Entries" />
+      <Button fx:id="proceedToEffortLogConsole" layoutX="392.0" layoutY="433.0" mnemonicParsing="false" onAction="#redirectToEffortAndDefectLogs" prefHeight="25.0" prefWidth="242.0" text="Proceed to the Effort Log Console" />
+   </children>
+</AnchorPane>

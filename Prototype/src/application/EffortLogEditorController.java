@@ -16,7 +16,7 @@ public class EffortLogEditorController {
 	@FXML
 	private void redirectToEffortAndDefectLogs() {
 	    try {
-	        FXMLLoader loader = new FXMLLoader(getClass().getResource("effortLogConsole.fxml"));
+	        FXMLLoader loader = new FXMLLoader(getClass().getResource("Effort_Console.fxml"));
 	        Parent newSceneRoot = loader.load();
 	        Scene newScene = new Scene(newSceneRoot);
 

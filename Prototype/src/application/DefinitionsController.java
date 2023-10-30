@@ -38,7 +38,7 @@ public class DefinitionsController {
 	@FXML
 	private void redirectToEffortLogConsole() {
 	    try {
-	        FXMLLoader loader = new FXMLLoader(getClass().getResource("effortLogConsole.fxml"));
+	        FXMLLoader loader = new FXMLLoader(getClass().getResource("Effort_Console.fxml"));
 	        Parent newSceneRoot = loader.load();
 	        Scene newScene = new Scene(newSceneRoot);
 
@@ -52,7 +52,7 @@ public class DefinitionsController {
 	@FXML
 	private void redirectToEffortLogConsole1() {
 	    try {
-	        FXMLLoader loader = new FXMLLoader(getClass().getResource("effortLogConsole.fxml"));
+	        FXMLLoader loader = new FXMLLoader(getClass().getResource("Effort_Console.fxml"));
 	        Parent newSceneRoot = loader.load();
 	        Scene newScene = new Scene(newSceneRoot);
 
